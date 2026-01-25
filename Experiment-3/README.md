@@ -35,8 +35,9 @@ This project is developed as part of **Experiment 3 – Full Stack II**.
 
 ## 📂 Folder Structure
 
-src/
-│
+```
+Experiment-3
+├──src/
 ├── components/
 │ ├── Home.jsx
 │ ├── About.jsx
@@ -48,7 +49,7 @@ src/
 ├── App.jsx
 ├── App.css
 └── main.jsx
-
+```
 
 ---
 
@@ -108,8 +109,22 @@ After completing this experiment, I am able to:
 ---
 
 ## 📸 Screenshots
-
-
+<img width="1237" height="663" alt="Image" src="https://github.com/user-attachments/assets/54e28796-ead6-4e4f-a126-d8248de6c5d6" />
+<p align="center">
+  <em>Home Page</em>
+</p>
+<img width="1237" height="663" alt="Image" src="https://github.com/user-attachments/assets/e93e3718-c91d-46d9-8924-7fce67c82df9" />
+<p align="center">
+  <em>About Page</em>
+</p>
+<img width="1237" height="663" alt="Image" src="https://github.com/user-attachments/assets/e6debd59-d96b-4cc0-8893-731e57b2ff95" />
+<p align="center">
+  <em>Contact Page</em>
+</p>
+<img width="1237" height="663" alt="Image" src="https://github.com/user-attachments/assets/90c3b58f-4fb2-4978-890c-9cae2331f7d9" />
+<p align="center">
+  <em>Product Page</em>
+</p>
 ---
 
 ## ✅ Conclusion
