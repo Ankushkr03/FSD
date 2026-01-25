@@ -1,0 +1,100 @@
+/* Reset */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: #f1f5f9;
+}
+
+/* Navbar */
+nav {
+  background: #0f172a;
+  padding: 16px;
+  text-align: center;
+}
+
+nav a {
+  color: #cbd5f5;
+  text-decoration: none;
+  margin: 0 18px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+nav a.active {
+  color: #38bdf8;
+  border-bottom: 2px solid #38bdf8;
+  padding-bottom: 4px;
+}
+
+
+/* Page Card */
+.page {
+  max-width: 650px;
+  margin: 50px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  animation: fade 0.4s ease;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Products Grid */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.card {
+  background: #e0f2fe;
+  padding: 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #0f172a;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.card:hover {
+  background: #bae6fd;
+  transform: translateY(-5px);
+}
+
+/* Not Found */
+.notfound {
+  color: #dc2626;
+}
+
+.page {
+  animation: fadeIn 0.4s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
