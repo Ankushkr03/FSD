@@ -1,122 +1,119 @@
-🚀 Implement Routing in Single Page Application (SPA)
-📖 Project Description
+# 🚀 Implement Routing in Single Page Application (SPA)
 
-This project demonstrates the implementation of client-side routing in a Single Page Application (SPA) using React Router DOM v6.
+## 📖 Project Description
+
+This project demonstrates the implementation of **client-side routing in a Single Page Application (SPA)** using **React Router DOM v6**.  
 The application allows seamless navigation between multiple pages such as Home, About, Contact, and Products without refreshing the browser.
 
-It also includes dynamic routing, active navigation links, and a custom 404 error page, providing a smooth and interactive user experience.
+It also includes **dynamic routing**, **active navigation links**, and a **custom 404 error page**, providing a smooth and interactive user experience.
 
-This project is developed as part of Experiment 3 – Full Stack II.
+This project is developed as part of **Experiment 3 – Full Stack II**.
 
-🎯 Experiment Objectives
+---
 
-To understand the concept of Single Page Applications
+## 🎯 Experiment Objectives
 
-To study client-side routing
+- To understand the concept of Single Page Applications  
+- To study client-side routing  
+- To install and use React Router DOM  
+- To implement navigation between multiple pages  
+- To implement dynamic routes using parameters  
+- To handle invalid routes using a 404 page  
 
-To install and use React Router DOM
+---
 
-To implement navigation between multiple pages
+## 🧰 Technologies Used
 
-To implement dynamic routes using parameters
+- React JS  
+- React Router DOM v6  
+- Vite  
+- HTML5  
+- CSS3  
+- JavaScript (ES6)
 
-To handle invalid routes using a 404 page
+---
 
-🧰 Technologies Used
+## 📂 Folder Structure
 
-React JS
-
-React Router DOM v6
-
-Vite
-
-HTML5
-
-CSS3
-
-JavaScript (ES6)
-
-📂 Folder Structure
 src/
 │
 ├── components/
-│   ├── Home.jsx
-│   ├── About.jsx
-│   ├── Contact.jsx
-│   ├── Products.jsx
-│   ├── ProductDetails.jsx
-│   └── NotFound.jsx
+│ ├── Home.jsx
+│ ├── About.jsx
+│ ├── Contact.jsx
+│ ├── Products.jsx
+│ ├── ProductDetails.jsx
+│ └── NotFound.jsx
 │
 ├── App.jsx
 ├── App.css
 └── main.jsx
 
-✨ Features Implemented
 
-Client-side routing
+---
 
-Navigation bar with active link highlighting
+## ✨ Features Implemented
 
-Dynamic route for product details
+- Client-side routing  
+- Navigation bar with active link highlighting  
+- Dynamic route for product details  
+- Smooth page transitions  
+- Custom 404 Not Found page  
+- Simple and clean UI  
 
-Smooth page transitions
+---
 
-Custom 404 Not Found page
+## 🔗 Routes Configuration
 
-Simple and clean UI
+| Route | Description |
+|------|------------|
+| / | Home Page |
+| /about | About Page |
+| /contact | Contact Page |
+| /products | Products Page |
+| /products/:id | Dynamic Product Page |
+| * | 404 Not Found Page |
 
-🔗 Routes Configuration
-Route	Description
-/	Home Page
-/about	About Page
-/contact	Contact Page
-/products	Products Page
-/products/:id	Dynamic Product Page
-*	404 Not Found Page
-⚙️ Installation & Execution Steps
+---
 
-Clone the repository
+## ⚙️ Installation & Execution Steps
 
-git clone <repository-url>
-
-
-Open project folder
-
-cd spa-routing
-
-
-Install dependencies
-
-npm install
-
-
-Run application
-
-npm run dev
+1. Clone the repository  
+    git clone <repository url>
+2. Open project folder
+    cd Experiment-3
+3. Install dependencies
+    npm install
+4. Run application
+    npm run dev
+5. Open in browser
 
 
-Open in browser
+---
 
-http://localhost:5173
-
-📘 Learning Outcomes
+## 📘 Learning Outcomes
 
 After completing this experiment, I am able to:
 
-Explain the working of Single Page Applications
+- Explain the working of Single Page Applications  
+- Differentiate between client-side and server-side routing  
+- Implement routing using React Router DOM  
+- Create multiple pages in React  
+- Implement dynamic routing using URL parameters  
+- Use `useParams()` hook to access route parameters  
+- Handle page not found (404) errors  
+- Build structured and modular React applications  
+- Improve user interface using CSS  
 
-Differentiate between client-side and server-side routing
+---
 
-Implement routing using React Router DOM
+## 📸 Screenshots
 
-Create multiple pages in React
 
-Implement dynamic routing using URL parameters
+---
 
-Use useParams() hook to access route parameters
+## ✅ Conclusion
 
-Handle page not found (404) errors
+This experiment helped me understand how routing is implemented in Single Page Applications using React Router DOM. It enhanced my knowledge of frontend development and improved my ability to build modern web applications with smooth navigation.
 
-Build structured and modular React applications
 
-Improve user interface using CSS
