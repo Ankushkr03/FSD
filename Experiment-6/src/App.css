@@ -1,0 +1,4 @@
+/* App.css is now minimal as we use Material-UI Box/Paper for layout */
+.theme-btn {
+  /* No longer needed but keeping as placeholder if you want custom button styles */
+}
