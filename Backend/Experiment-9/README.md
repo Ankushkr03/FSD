@@ -48,7 +48,7 @@ Experiment-9/
 ## Default Users (In-Memory Data)
 For demonstration purposes, the application uses an in-memory dictionary of users:
 * **Username**: `admin` | **Password**: `admin123` | **Role**: `admin`
-* **Username**: `john`  | **Password**: `john123`  | **Role**: `user`
+* **Username**: `ankush`  | **Password**: `ankushkr9878`  | **Role**: `user`
 
 ---
 
