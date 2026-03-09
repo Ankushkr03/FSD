@@ -1,16 +1,128 @@
-# React + Vite
+# Shopping Cart Indicator (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Project Overview
 
-Currently, two official plugins are available:
+This project is a simple **React-based Shopping Cart Indicator** that demonstrates how to manage and share state between multiple components. The application includes a button that allows users to add items to a cart and a component that displays the current number of items in the cart.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The project helps illustrate core React concepts such as **state management, component communication, and props**.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🎯 Features
 
-## Expanding the ESLint configuration
+* Add items to the cart using a button
+* Dynamically update the cart count
+* Display cart count in a separate component
+* Clean and modular component-based structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧰 Technologies Used
+
+* React.js
+* JavaScript (ES6)
+* HTML5
+* CSS3
+
+---
+
+## 📂 Project Structure
+
+```
+src
+│
+├── components
+│   ├── CartDisplay.js
+│   └── AddItemButton.js
+│
+├── App.js
+├── index.js
+└── README.md
+```
+
+---
+
+## ⚙️ Installation and Setup
+
+1. Clone the repository
+
+```
+git clone https://github.com/your-username/shopping-cart-indicator.git
+```
+
+2. Navigate to the project directory
+
+```
+cd shopping-cart-indicator
+```
+
+3. Install dependencies
+
+```
+npm install
+```
+
+4. Start the development server
+
+```
+npm start
+```
+
+The application will run at:
+
+```
+http://localhost:3000
+```
+
+---
+
+## 🧩 Components Explanation
+
+### App Component
+
+The **App component** acts as the parent component and manages the state of the cart using React's `useState` hook.
+
+### AddItemButton Component
+
+This component renders the **Add Item** button and triggers the function that increases the cart count.
+
+### CartDisplay Component
+
+This component receives the cart count as **props** and displays the total number of items currently in the cart.
+
+---
+
+## 🔄 Working of the Application
+
+1. The cart count is initialized to **0** using `useState`.
+2. When the user clicks the **Add Item** button, the `addItem` function is executed.
+3. The function updates the state using `setCartCount`.
+4. The updated value is passed to the **CartDisplay** component via props.
+5. The UI re-renders automatically to show the updated cart count.
+
+---
+
+## 📚 Concepts Demonstrated
+
+* React Functional Components
+* React Hooks (`useState`)
+* Props for component communication
+* Component-based architecture
+
+---
+
+## 🚀 Future Improvements
+
+* Add remove item functionality
+* Add product listing
+* Store cart items using local storage
+* Integrate with backend APIs
+
+---
+
+## 👨‍💻 Author
+
+Ankush Kr.
+B.E CSE (Information Security)
+
+---
