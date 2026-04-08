@@ -1,15 +1,12 @@
 from flask import Flask, request, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from marshmallow import Schema, fields, validate, ValidationError
-import pymysql
 import os
-
-pymysql.install_as_MySQLdb()
 
 app = Flask(__name__)
 
 # Update MySQL credentials below
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://ankush:kumar%40123@127.0.0.1/chandigarh_university_db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///students.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
