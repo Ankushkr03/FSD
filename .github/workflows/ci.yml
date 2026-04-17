@@ -31,7 +31,7 @@ jobs:
 
       - name: Run pytest
         working-directory: Testing/Backend
-        run: pytest -v
+        run: python -m pytest -v
 
   # ─────────────────────────────────────────
   # JOB 2: Frontend Tests (vitest)
