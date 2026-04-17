@@ -25,7 +25,7 @@ Backend/
 - Render (Cloud Deployment)
 - Virtual Environment (venv)
 
-### Deployment Base URL --> [Render Link]([https://two3bis70048-experiment-16-backend.onrender.com])
+### Deployment Base URL --> [Render Link][(https://two3bis70048-experiment-16-backend.onrender.com)]
 
 ## STEPS & SCREENSHOTS
 
