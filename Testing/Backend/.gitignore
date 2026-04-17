@@ -1,0 +1,20 @@
+# Virtual environments
+venv/
+exp16/
+env/
+.env
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Coverage
+.coverage
+htmlcov/
+
+# Instance / DB files
+instance/
+
+# OS
+.DS_Store
