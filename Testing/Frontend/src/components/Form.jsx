@@ -74,7 +74,7 @@ export default function Form() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (e.target.checkValidity() && validate()) {
+    if (validate()) {
       alert('Registration Successful!');
       console.log(formData);
     }
@@ -120,7 +120,7 @@ export default function Form() {
           fullWidth
           margin="normal"
           required
-          InputLabelProps={{ shrink: true }}
+          slotProps={{ inputLabel: { shrink: true } }}
           error={Boolean(errors.dob)}
           helperText={errors.dob}
         />
