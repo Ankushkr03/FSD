@@ -3,17 +3,17 @@
 ### Project Structure
 
 ```bash
-Experiment_8/
+Backend/
 ├── routes/
-│   └── student_routes.py
-├── exp8/
-│   ├── Include/
-│   ├── Lib/
-│   └── Scripts/
-├── requirements.txt
-├── app.py
-├── run.py
-└── README.md
+│   ├── __init__.py          # Routes package initialization
+│   └── student_routes.py    # Student management API endpoints
+├── Screenshots/             # Execution and result screenshots
+├── app.py                   # Flask application factory/configuration
+├── app_test.py              # Backend unit tests (Pytest)
+├── run.py                   # Application entry point
+├── requirements.txt         # Project dependencies
+└── README.md                # Backend documentation
+
 ```
 
 ### Technologies Used
