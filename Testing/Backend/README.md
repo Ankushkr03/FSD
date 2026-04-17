@@ -36,25 +36,25 @@ Flask development server successfully started.
 
 ### 2. CREATE Student (POST)
 
-![Create Student 1](Screenshots/1.png)
+<img width="1281" height="804" alt="Image" src="https://github.com/user-attachments/assets/ff21072b-1ba7-48a6-8637-fdf77a3b64a9" />
 
 ### 3. READ ALL Students (GET)
 
-![Read All Students](Screenshots/3.png)
+<img width="1281" height="804" alt="Image" src="https://github.com/user-attachments/assets/3f6ee721-2b8b-45b9-b75b-25522e15bc93" />
 
 ### 4. READ ONE Student that doesn't exist in the DB
 
 ### GET Student ID = 2
 
-![Read One - ID 2](Screenshots/4.png)
+<img width="1281" height="804" alt="Image" src="https://github.com/user-attachments/assets/792b6998-86c5-409f-97fb-e1769bebe7ea" />
 
 ### 5. UPDATE Student (PUT)
 
-![Update Student](Screenshots/5.png)
+<img width="1280" height="804" alt="Image" src="https://github.com/user-attachments/assets/6d99ec07-538f-43ba-843b-b65c16376fef" />
 
 ### 6. DELETE Student data
 
-![Delete Student](Screenshots/6.png)
+<img width="1280" height="804" alt="Image" src="https://github.com/user-attachments/assets/cb139d44-849c-495b-91d2-618757e23a32" />
 
 ## API Endpoints Summary
 
