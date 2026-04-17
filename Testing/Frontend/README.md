@@ -1,16 +1,37 @@
-# React + Vite
+# Testing Frontend - React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the frontend component of the testing module, built using **React**, **Vite**, and **Material UI**.
 
-Currently, two official plugins are available:
+## 🚀 Features
+- **Modern UI**: Built with Material UI (MUI) components for a professional look and feel.
+- **Form Integration**: Includes dynamic forms for student data entry.
+- **API Connectivity**: Communicates with the Flask backend to perform CRUD operations.
+- **Fast Development**: Powered by Vite for instant Hot Module Replacement (HMR).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Setup Instructions
 
-## React Compiler
+1. **Navigate to the directory**:
+   ```bash
+   cd Testing/Frontend
+   ```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-## Expanding the ESLint configuration
+3. **Run the development server**:
+   ```bash
+   npm run dev
+   ```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+4. **Build for production**:
+   ```bash
+   npm run build
+   ```
+
+## 🏗️ Tech Stack
+- **Framework**: React 18
+- **Build Tool**: Vite
+- **UI Library**: Material UI (MUI)
+- **Styling**: CSS Modules / Emotion
