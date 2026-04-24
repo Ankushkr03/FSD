@@ -54,7 +54,7 @@ jobs:
 
       - name: Run tests
         working-directory: Experiment-20/frontend
-        run: npm run test
+        run: npx vitest run --reporter=default --reporter=github-actions
 
   backend-docker:
     name: backend-docker
