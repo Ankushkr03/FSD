@@ -1,16 +1,18 @@
-name: Experiment-20 Tests
+name: Experiment 20 CI/CD
 
 on:
   push:
+    branches: [main]
     paths:
       - 'Experiment-20/**'
   pull_request:
+    branches: [main]
     paths:
       - 'Experiment-20/**'
 
 jobs:
-  backend-tests:
-    name: 🐍 Backend Tests
+  backend-test:
+    name: backend-test
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -26,14 +28,14 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-          pip install pytest pytest-cov pymysql
+          pip install pytest pytest-cov
 
       - name: Run tests
         working-directory: Experiment-20/backend
         run: pytest -v
 
-  frontend-tests:
-    name: ⚛️ Frontend Tests
+  frontend-test:
+    name: frontend-test
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -55,21 +57,37 @@ jobs:
         run: npm run test
 
   backend-docker:
-    name: 🐳 Backend Docker Build
+    name: backend-docker
+    needs: backend-test
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Build Backend Image
-        run: docker build -t experiment-20-backend ./Experiment-20/backend
+        run: docker build -t exp20-backend ./Experiment-20/backend
 
   frontend-docker:
-    name: 🐳 Frontend Docker Build
+    name: frontend-docker
+    needs: frontend-test
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Build Frontend Image
-        run: docker build -t experiment-20-frontend ./Experiment-20/frontend
+        run: docker build -t exp20-frontend ./Experiment-20/frontend
+
+  deploy:
+    name: deploy
+    needs: [backend-docker, frontend-docker]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Simulated Deploy
+        run: |
+          echo "🚀 Deploying Experiment-20 to Production..."
+          echo "✅ Backend and Frontend images are verified."
+          echo "✅ Deployment successful!"
