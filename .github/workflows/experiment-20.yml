@@ -53,3 +53,23 @@ jobs:
       - name: Run tests
         working-directory: Experiment-20/frontend
         run: npm run test
+
+  backend-docker:
+    name: 🐳 Backend Docker Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build Backend Image
+        run: docker build -t experiment-20-backend ./Experiment-20/backend
+
+  frontend-docker:
+    name: 🐳 Frontend Docker Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build Frontend Image
+        run: docker build -t experiment-20-frontend ./Experiment-20/frontend
